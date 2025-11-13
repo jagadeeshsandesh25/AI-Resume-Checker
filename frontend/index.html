@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Resume Checker </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>AI Resume Checker</h1>
+    <p>Upload your resume (PDF only) — get instant AI feedback!</p>
+
+    <input type="file" id="resumeInput" accept=".pdf" />
+    <button onclick="analyzeResume()">Check My Resume</button>
+
+    <div id="loading" class="hidden">Analyzing... </div>
+    <div id="feedback" class="feedback-box hidden"></div>
+    <div id="error" class="error-box hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
