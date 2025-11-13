@@ -1,133 +1,133 @@
-README.md — AI Resume Checker
-# AI Resume Checker 
-An AI-powered web application that analyzes resumes using **Flask + Ollama + Mistral Model**.  
-Upload your PDF resume → get instant, ATS-style feedback including strengths, weaknesses, and actionable improvements.
+AI Resume Checker
 
----
+A lightweight AI-powered web application that analyzes resumes using Flask, Ollama, and the Mistral model.
+Upload a PDF resume and instantly receive ATS-style scoring, strengths, weaknesses, and clear improvement suggestions.
 
-## 🚀 Features
+Features
 
-- **AI-based resume analysis** using Mistral (via Ollama)
-- **ATS-style scoring** (score out of 10)
-- **Strengths & Weaknesses extraction**
-- **3 direct improvement suggestions**
-- **PDF text extraction** (PyPDF2)
-- **Lightweight frontend** (HTML + CSS + JS)
-- **Fast Flask backend**
-- Extremely easy to run locally
+AI-driven resume analysis using Mistral (via Ollama)
 
----
+ATS-style score (0–10)
 
-## 🧩 Project Structure
+Strength and weakness extraction
 
+Actionable improvement recommendations
 
+PDF text extraction using PyPDF2
 
+Minimal and clean HTML/CSS/JS frontend
+
+Fast Flask backend
+
+Simple local setup
+
+Project Structure
 ai-resume-checker/
 │
 ├── backend/
-│ ├── app.py # Flask API + AI processing
-│ ├── requirements.txt # Backend dependencies
-│ └── utils/
-│ └── resume_parser.py # PDF text extractor
+│   ├── app.py                # Flask API + AI logic
+│   ├── requirements.txt      # Backend dependencies
+│   └── utils/
+│       └── resume_parser.py  # PDF text extractor
 │
 ├── frontend/
-│ ├── index.html # UI for uploading resumes
-│ ├── style.css # Clean styling
-│ └── script.js # Frontend logic
+│   ├── index.html            # Upload UI
+│   ├── style.css             # Styling
+│   └── script.js             # Frontend logic
 │
-├── run.sh # Optional one-click run script
+├── run.sh                    # Optional one-click run script
 ├── .gitignore
 └── README.md
 
+Tech Stack
+Backend
 
----
+Python 3
 
-## 🛠️ Tech Stack
+Flask
 
-### **Backend**
-- Python 3
-- Flask 3
-- PyPDF2
-- Ollama (Mistral Model)
+PyPDF2
 
-### **Frontend**
-- HTML  
-- CSS  
-- JavaScript (Fetch API)
+Ollama + Mistral Model
 
----
+Frontend
 
-## ⚙️ Installation & Setup
+HTML
 
-### **1️⃣ Clone the Repository**
+CSS
 
-```bash
+JavaScript (Fetch API)
+
+Installation and Setup
+1. Clone the Repository
 git clone https://github.com/your-username/ai-resume-checker.git
 cd ai-resume-checker
 
-2️⃣ Install Python Dependencies
+2. Install Required Python Packages
 pip install -r backend/requirements.txt
 
-3️⃣ Install & Run Ollama
+3. Install and Run Ollama
 
 Download the Mistral model:
 
 ollama run mistral
 
 
-Start Ollama server:
+Start the Ollama server:
 
 ollama serve
 
 
-⚠️ Ollama must be running in background.
+Ensure Ollama is running in the background.
 
-4️⃣ Start the Backend (Flask)
+4. Start the Flask Backend
 cd backend
 python app.py
 
-5️⃣ Open The App
+5. Open the Application
 
-Open your browser 👇
-👉 http://localhost:5000
+Open your browser and visit:
 
-Upload your PDF → AI analysis appears instantly.
+http://localhost:5000
 
-🤖 How Resume Analysis Works
 
-User uploads a PDF file
+Upload a PDF resume — analysis will appear instantly.
 
-Backend extracts text using PyPDF2
+How It Works
 
-Text is sent to Mistral model (Ollama)
+The user uploads a PDF resume.
 
-AI returns:
+The backend extracts text using PyPDF2.
 
-⭐ Overall Resume Score
+The extracted text is sent to the Mistral model via Ollama.
 
-💪 Key Strengths
+The model returns:
 
-⚠️ Weak areas
+Overall resume score
 
-🛠 Actionable improvement tips
+Key strengths
 
-Designed to mimic real ATS + HR expert feedback.
+Weak areas
 
-📤 API Endpoint
+Improvement suggestions
+
+This pipeline is designed to mimic real ATS behavior and HR-style evaluation.
+
+API Endpoint
 POST /analyze
 
 Form Data:
 
 resume → PDF file
 
-Response:
+Response Example:
 
 {
   "success": true,
   "feedback": "AI generated analysis..."
 }
 
-🧪 Sample Resume Content (for testing)
+Sample Resume Content (For Testing)
 John Doe
 Email: john@example.com
 Phone: 9876543210
@@ -141,26 +141,26 @@ Experience:
 Education:
 B.Tech in Computer Science, ABC College
 
-🧱 Future Enhancements
+Future Enhancements
 
-DOCX support
+DOCX file support
 
-Downloadable PDF report
+Export AI feedback as a downloadable PDF report
 
-Job description matcher
+Job description matching
 
 Multi-model support (Llama3, Phi3, Gemma, GPT APIs)
 
-Resume formatting suggestions
+Resume formatting analysis
 
 ATS keyword matching
 
-👨‍💻 Author
+Author
 
 Jagadeesh Goli
 AI Developer | Resume Automation | Prompt Engineer
 Hindu College of Engineering & Technology
 
-📜 License
+License
 
-MIT License — Free for personal & commercial use.
+MIT License — free for personal and commercial use.
