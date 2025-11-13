@@ -150,7 +150,8 @@ Future Enhancements
 
     ATS keyword matching
 
-Author
+
+##Author
 
 Jagadeesh Goli
 AI Developer | Resume Automation | Prompt Engineer
@@ -160,7 +161,4 @@ License
 MIT License — Free for personal & commercial use.
 
 
----
-
-You can copy-paste this directly into your GitHub repo’s `README.md` — it’ll render perfectly in Markdown preview.
 
